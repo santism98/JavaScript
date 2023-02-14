@@ -1,0 +1,23 @@
+div#uno,
+div#dos,
+div#tres {
+	width: 500px;
+	height: 300px;
+	border: 1px solid black;
+	margin: 10px 0;
+	padding: 50px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+div#dos {
+	background-color: red;
+	box-shadow: 0px 0px 0 rgba(0, 0, 0, 1.0);
+	transition: background-color 1s ease-in-out, box-shadow 2s 2s, transform 2s;
+}
+
+div#dos:hover {
+	background-color: rgb(30, 255, 0);
+	box-shadow: 20px 200px 30px rgba(0, 0, 0, 1.0);
+	transform: scale(1.2);
+}
