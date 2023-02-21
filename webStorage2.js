@@ -56,11 +56,19 @@ const addLista = () => {
   lista.innerHTML = "";
   arrayCompra.forEach(({ id, producto }) => {
     lista.innerHTML += `<li id=${id}>${producto} <button class='add'>Añadir</button> </li>`;
-  });
+    </li>
+});
+if (arrayProductos.length > 0) {
+    compra.innerHTML += `<div><button class='vaciar'>Vaciar Cesta</button></div>`;
+};
 };
 
-const addCarrito = () => {
-  compra.innerHTML = "";
+const addLocal= ()=>{
+localStorage.setItem('productos',JSON.stringify(arrayProductos))
+};
 
-  arrayProductos.forEach(({ id, producto }) => {
-    compra.innerHTML += `<li id=${id}>${producto} <button class='del'>
+document.addEventListener("DOMContentLoaded", () => {
+
+addLista();
+
+});
