@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Películas</title>
+  </head>
+  <body>
+    <form id="formulario">
+      <h3>Título:</h3>
+      <input type="text" id="titulo" name="titulo" required>
+      <br>
+      <h3 for="director">Director:</h3>
+      <input type="text" id="director" name="director" required>
+      <br>
+      <h3 for="anio">anio:</h3>
+      <input type="number" id="anio" name="anio" required>
+      <br>
+      <h3 for="genero">Género:</h3>
+      <select id="genero" name="genero" required>
+        <option value="">Selecciona un género</option>
+      </select>
+      <br>
+      <input type="submit" value="Agregar Película">
+    </form>
     
-</body>
-<script src="main.js"></script>
+    <table id="tabla">
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Director</th>
+          <th>anio</th>
+          <th>Género</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-cuerpo"></tbody>
+    </table>
+
+    
+  </body>
+  <script src="main.js"></script>
 </html>
